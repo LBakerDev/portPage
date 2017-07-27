@@ -1,0 +1,298 @@
+/* home page styling */
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    color: #424652
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 { 
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.375rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p, li {
+    font-size: 1.1rem;
+    line-height: 1.75;
+}
+
+p, ul, ol {
+    margin: 0 0 1.6em 0;
+}
+
+ hr{
+    width: 3em;
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #8bc6db;
+    margin: 2rem 0;
+}
+
+#main_navigation {
+    display: flex;
+    padding: 2.5em 5%;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+body{
+    font-family: raleway, sans-serif;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.skinny_wrapper {
+    width: 80%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.wrapper_padding {
+    padding: 4rem 0;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap
+}
+
+#homePage h2{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+
+
+#homePage h3{
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-bottom: .5em;
+}
+
+#homePage .date{
+    font-size: .85em;
+    margin-bottom: 2em;
+    color: #9a9da4;
+}
+
+#homePage p{
+    margin: 0 0 0 0;
+}
+
+/* styling for brand */
+.name{
+    font-weight: 700px;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: 2px solid #9a9da4; 
+    padding:  1rem;
+    text-decoration: none;
+    float: left;
+    /* color: #424652; */
+    color: black;
+}
+
+nav {
+    float: right; 
+    padding-top: 1.0rem;
+}
+
+nav a{
+    color: #424652;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+
+.about {
+    flex-grow: 4.5;
+    padding: 0 7.5% 0 0;
+}
+
+.about a {
+    color: #8bc6db;
+    text-decoration: none;
+    font-weight: 700;
+}
+.writings, .builds {
+    flex-grow: 3.75;
+    padding: 0 2.5%
+}
+
+/* styling for home page footer */
+#main_footer {
+    /* padding: 2.5em 5%;  */
+    border-top: 1px solid grey
+}
+
+ #homePage .copyright{
+    font-size: .9em;
+}
+
+ #homePage #main_footer nav {
+    margin-left: 1em;
+    padding-top: .3em; 
+} 
+
+#homePage #main_footer nav i:hover {
+    color: #8bc6db
+}
+
+/* Styling footer on articles page */
+ #articles .copyright{
+    font-size: .9em;
+    margin: 0;
+}
+
+#articles #main_footer nav {
+    
+    margin-left: 1em;
+    padding-top: .3em; 
+}
+
+#articles #main_footer nav i:hover {
+    color: #8bc6db
+}
+
+#page_title {
+   
+    text-align: center;
+    border-bottom: 1px solid #E9E9E9;
+    padding: 3em 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+#posts_wrapper{
+    padding: 3em 0;
+}
+
+.post {
+    text-align: center;
+}
+
+.post h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.post .date {
+    font-size: .9em;
+    margin: 0;
+
+}
+
+#articles hr{
+    margin: 3em auto;
+}
+
+#articles h2 a {
+    text-decoration: none;
+    color: #424652;
+}
+
+#articles h2 a:hover{
+    color: #8bc6db;
+}
+
+.pagination{
+    text-align: center;
+    margin: 0 0 3em 0;
+}
+
+.pagination a {
+    padding: .75em 1em;
+    margin: 0 .5em;
+    border-radius: .15em;
+    line-height: 20px;
+    text-decoration: none;
+    background: white;
+    font-weight: 700;
+    font-size: .7em;
+    font-style: normal;
+    color: #424652
+}
+
+.pagination a:hover{
+    background: #8bc6db;
+    color: white;
+}
+.previous_page, .current, .next_page {
+    padding: .75em 1em;
+    margin: 0 .5em;
+    border-radius: .15em;
+    line-height: 20px;
+    text-decoration: none;
+    background: white;
+    font-weight: 700;
+    font-size: .7em;
+    font-style: normal;
+    color: #424652
+}
+
+.current {
+    background: #8bc6db;
+    color: white;
+}
+
+.disabled {
+    color: #C0C0C0
+}
+.disabled:hover {
+    color: #C0C0C0;
+    background: white;
+}
+
+/* Styling for projects page */
+
+ #projects .copyright{
+    font-size: .9em;
+    margin: 0;
+}
+
+#projects #main_footer nav {
+    
+    margin-left: 1em;
+    padding-top: .3em; 
+}
+
+#projects #main_footer nav i:hover {
+    color: #8bc6db
+}
+
+#projects hr{
+    margin: 3em auto;
+}
+
+#projects h2 a {
+    text-decoration: none;
+    color: #424652;
+}
+
+#projects h2 a:hover{
+    color: #8bc6db;
+}
