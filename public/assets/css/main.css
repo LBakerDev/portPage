@@ -1,7 +1,7 @@
 /* home page styling */
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
-    color: #424652
+    color: white;
 }
 
 h1 {
@@ -50,6 +50,7 @@ p, ul, ol {
     display: flex;
     padding: 2.5em 5%;
     border-bottom: 1px solid #E9E9E9;
+    text-align: center;
 }
 
 body{
@@ -72,12 +73,14 @@ body{
 }
 .flex-container{
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #homePage h2{
     font-size: 1.1rem;
     text-transform: uppercase;
+    color: white;
 }
 
 
@@ -86,16 +89,12 @@ body{
     font-size: 1.25em;
     font-weight: 400;
     margin-bottom: .5em;
-}
-
-#homePage .date{
-    font-size: .85em;
-    margin-bottom: 2em;
-    color: #9a9da4;
+    color: white
 }
 
 #homePage p{
     margin: 0 0 0 0;
+    color: white;
 }
 
 /* styling for brand */
@@ -108,17 +107,17 @@ body{
     padding:  1rem;
     text-decoration: none;
     float: left;
-    /* color: #424652; */
-    color: black;
+    color: white;
 }
 
 nav {
     float: right; 
-    padding-top: 1.0rem;
+    padding-top: 0rem;
+    margin-left: 8.1rem;
 }
 
 nav a{
-    color: #424652;
+    color: white;
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1rem;
@@ -127,7 +126,7 @@ nav a{
 
 
 .about {
-    flex-grow: 4.5;
+    flex-grow: 4;
     padding: 0 7.5% 0 0;
 }
 
@@ -136,15 +135,19 @@ nav a{
     text-decoration: none;
     font-weight: 700;
 }
-.writings, .builds {
-    flex-grow: 3.75;
-    padding: 0 2.5%
+.builds {
+    flex-grow: 8;
+    padding: 0 0%
 }
 
 /* styling for home page footer */
 #main_footer {
     /* padding: 2.5em 5%;  */
-    border-top: 1px solid grey
+    border-top: 1px solid grey;
+    background-color:black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
  #homePage .copyright{
@@ -206,93 +209,70 @@ nav a{
 
 }
 
-#articles hr{
-    margin: 3em auto;
+
+/* styling for contact form */
+
+input[type="text"], input[type="email"], 
+input[type="password"], textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 3em;
+    border: 2px solid #E9E9E9;
+    padding: 1em;
+    margin: .5em 0 2em 0;
 }
 
-#articles h2 a {
-    text-decoration: none;
-    color: #424652;
+textarea {
+    min-height: 20em;
 }
 
-#articles h2 a:hover{
-    color: #8bc6db;
-}
-
-.pagination{
+input[type="submit"], .button {
+    outline: none;
+    background: transparent;
+    border: 2px solid #424652;
     text-align: center;
-    margin: 0 0 3em 0;
-}
-
-.pagination a {
-    padding: .75em 1em;
-    margin: 0 .5em;
-    border-radius: .15em;
-    line-height: 20px;
-    text-decoration: none;
-    background: white;
-    font-weight: 700;
-    font-size: .7em;
-    font-style: normal;
-    color: #424652
-}
-
-.pagination a:hover{
-    background: #8bc6db;
+    font-size: 1em;
     color: white;
-}
-.previous_page, .current, .next_page {
-    padding: .75em 1em;
-    margin: 0 .5em;
-    border-radius: .15em;
-    line-height: 20px;
     text-decoration: none;
-    background: white;
-    font-weight: 700;
-    font-size: .7em;
-    font-style: normal;
-    color: #424652
+    padding: 1em 2em;
 }
 
-.current {
-    background: #8bc6db;
-    color: white;
-}
-
-.disabled {
-    color: #C0C0C0
-}
-.disabled:hover {
-    color: #C0C0C0;
-    background: white;
-}
-
-/* Styling for projects page */
-
- #projects .copyright{
-    font-size: .9em;
-    margin: 0;
-}
-
-#projects #main_footer nav {
-    
-    margin-left: 1em;
-    padding-top: .3em; 
-}
-
-#projects #main_footer nav i:hover {
-    color: #8bc6db
-}
-
-#projects hr{
-    margin: 3em auto;
-}
-
-#projects h2 a {
-    text-decoration: none;
-    color: #424652;
-}
-
-#projects h2 a:hover{
+input[type="submit"]:hover{
+    border: 2px solid #8bc6db;
     color: #8bc6db;
+}
+
+
+img {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.box{
+    display: flex;
+}
+
+body{
+    background-image: url("../images/paul-morris-295077.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 568px) {
+     .topNav{
+        margin: 0 auto;
+     }
+
+     .name{
+         margin: 0 auto;
+     }
+    
+     .contact{
+         margin: 0 auto;
+     }
+}
+
+.contactName{
+    margin: 0 auto;
 }
